@@ -1,0 +1,673 @@
+@import url("media.css");
+
+/* 一些重置样式 */
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 一些通用样式 */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear-float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer {
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+/* 样式开始 */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 头部导航栏样式 */
+
+.header {
+    padding: 0 70px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+    z-index: 999;
+}
+
+.header-nav-left {
+    width: 135px;
+    height: 100%;
+}
+
+.header-nav-left:hover {
+    background-color: #ccc;
+}
+
+.header-nav-left a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.header-nav-left a img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 60%;
+}
+
+.header-nav-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-nav-right a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 36px;
+    margin: 0 20px;
+}
+
+.header-nav-right a:hover {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    color: #000;
+}
+
+.header-nav-right a img {
+    width: 30%;
+    height: 60%;
+    margin: 0 8px;
+}
+
+.header-nav-right .shoppingcar {
+    position: relative;
+}
+
+.header-nav-right .shoppingcar .count {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f40;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* 内容区样式 */
+
+.main {
+    width: 100%;
+}
+
+.main-title {
+    padding-top: 80px;
+    margin: 50px 50px 60px;
+}
+
+.main-title .initials {
+    color: skyblue;
+    margin-right: 6px;
+}
+
+.main-title span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main-title p {
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.main-content {
+    margin: 0 50px;
+}
+
+
+/* 内容区 侧边栏 */
+
+.main-content .main-content-sidebar {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+.main-content .main-content-sidebar .silder-item {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-content-sidebar .price-bar .input {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin: 20px 0 10px;
+    border-radius: 4px;
+    background-color: blue;
+}
+
+.main-content-sidebar .price-bar .input .point {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* 内容区 商品显示区 */
+
+.main-content-sidebar .control-show {
+    position: relative;
+    height: 26px;
+}
+
+.main-content-sidebar .control-show .ifSale {
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.main-content-sidebar .control-show .ifSale::before {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 4px;
+    content: '';
+    background-color: #ccc;
+}
+
+.main-content-sidebar .control-show .ifSale::after {
+    position: absolute;
+    display: inline-block;
+    right: 4px;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    content: '';
+    background-color: #fff;
+}
+
+.main-content-sidebar .control-show .active::before {
+    background-color: #00FF7F;
+}
+
+.main-content-sidebar .control-show .active::after {
+    right: 32px;
+}
+
+.main-content-sidebar .control-show input {
+    width: 0;
+    height: 0;
+}
+
+.main-content-sidebar .categories .select {
+    margin-top: 6px;
+    width: 100%;
+    height: 30px;
+}
+
+.main-content-sidebar .categories .select select {
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.main-content .main-content-sidebar div:last-of-type {
+    border: none;
+}
+
+.main-content .main-content-show {
+    margin-left: calc(20% + 20px);
+    box-sizing: border-box;
+}
+
+.main-content .main-content-show ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content .main-content-show .product-item {
+    /* 不应该固定宽度，flex布局flex属性可以自动调节，父元素设置flex-wrap就会自动换行*/
+    width: 30%;
+    min-width: 260px;
+    height: 350px;
+    margin: 0 20px 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+.main-content-show .product-item .product-preview {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.main-content-show .product-item .product-des .left {
+    width: 70%;
+    font-size: 22px;
+}
+
+.main-content-show .product-item .product-des .left:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+.main-content-show .product-item .product-des .left p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+.main-content-show .product-item .product-des .shopping-car {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("shoppingcar.png");
+    background-size: 60% 60%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.main-content-show .product-item .product-des .shopping-car:hover {
+    background-size: 70% 70%;
+    background-color: skyblue;
+}
+
+
+/* 结算页面 */
+
+.settle {
+    width: 100%;
+    padding: 140px 70px 0;
+    box-sizing: border-box;
+}
+
+
+/* 结算页 流程展示 */
+
+.settle .process {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.process .process-item {
+    position: relative;
+    width: 30%;
+    height: 120px;
+}
+
+.process .process-item div {
+    position: absolute;
+}
+
+.process .process-item .desc {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 500;
+    color: #ccc;
+}
+
+.process .process-item .line {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background-color: #ccc;
+}
+
+.process .process-item .icon {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 50%;
+    background-color: #ccc;
+}
+
+.process .first .line {
+    left: 50%;
+}
+
+.process .first .icon {
+    background-image: url("./car.png");
+}
+
+.process .second .line {
+    left: 50%;
+}
+
+.process .second .icon {
+    background-image: url("./settle.png");
+}
+
+.process .third .icon {
+    background-image: url("./success.png");
+}
+
+.process .processitemActive .line {
+    background-color: #00ff7f;
+}
+
+.process .processitemActive .icon {
+    border: 2px solid #00ff7f;
+    background-color: #fff;
+}
+
+.process .processitemActive .desc {
+    color: #000;
+}
+
+.process .first.processitemActive .icon {
+    background-image: url("./car-active.png");
+}
+
+.process .second.processitemActive .icon {
+    background-image: url("./settle-active.png");
+}
+
+.process .third.processitemActive .icon {
+    background-image: url("./success-active.png");
+}
+
+
+/* 购物车为空时的提示 */
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 40px auto 0;
+}
+
+.empty .back {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.empty .back:hover {
+    border: 1px solid #000;
+}
+
+
+/* 结算页面 购物车展示样式 */
+
+.show {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.settle ul {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+ul .car-item {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+ul .car-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.car-item .preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.car-item .preview img {
+    width: 40%;
+    height: 100%;
+}
+
+.car-item .detail .title-name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.car-item .detail .computed {
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.car-item .detail .control {
+    display: flex;
+}
+
+.detail .control div {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    cursor: pointer;
+}
+
+.detail .control .delete {
+    background-image: url("./delete.png");
+}
+
+.detail .control .add {
+    margin: 0 8px;
+    background-image: url("./add.png");
+}
+
+.detail .control .de {
+    background-image: url("./de.png");
+}
+
+
+/* 结算页 一些其他样式 */
+
+.total {
+    font-size: 24px;
+}
+
+.next {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #23d160;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 付款页面 */
+
+.payment {
+    width: 360px;
+    height: 420px;
+    margin: 40px auto 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.payment .choose {
+    margin: 10px 0;
+}
+
+.payment .weixin,
+.payment .zhifubao {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.payment .weixin:hover,
+.payment .zhifubao:hover {
+    box-shadow: 4px 4px 5px #ccc;
+}
+
+.payment .weixin {
+    background-color: #50b674;
+}
+
+.payment .zhifubao {
+    background-color: #08b4ff;
+}
+
+.payment .qrcode {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+}
+
+.payment .wxPay {
+    background-image: url("./wxcode.png");
+}
+
+.payment .zfbPay {
+    background-image: url("./zfbcode.png");
+}
+
+.payment .desc .wx-method {
+    color: #50b674;
+}
+
+.payment .desc .zfb-method {
+    color: #08b4ff;
+}
+
+.payment .test {
+    margin: 20px 0;
+}
+
+
+/* 付款成功的页面 */
+
+.success {
+    width: 360px;
+    height: 360px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.notice .icon {
+    width: 140px;
+    height: 140px;
+    margin: 10px auto;
+    background-image: url("./paymentSuc.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50%;
+}
