@@ -118,17 +118,16 @@ export default {
       }
     },
     addCar(e){
-      let productId = Number(e.target.id)
+      let productId = e.target.id;
       let addList = this.productsList.filter((item)=>{
-        if(item.id === productId){
-          return item;
-        }
+        return item.id === productId;
       })
+      console.log(addList);
       this.$store.dispatch("car/getAddListAction",{addList: addList[0]})
     }
   },
   created(){
-    axios.get("https://easy-mock.sucaidaohang.com/mock/5f24d6ca77b8d24c68cfbb84/").then((data) => {
+    axios.get("https://easy-mock.com/mock/5f21721574a4ec373ea6b039/").then((data) => {
       this.activeList = this.productsList = data.data.data;
       let priceList = this.productsList.map((item) => {
         return Number(item.price);
