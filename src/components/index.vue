@@ -127,7 +127,7 @@ export default {
     }
   },
   created(){
-    axios.get("https://easy-mock.com/mock/5f21721574a4ec373ea6b039/").then((data) => {
+    axios.get("http://rap2api.taobao.org/app/mock/286100/shop").then((data) => {
       this.activeList = this.productsList = data.data.data;
       let priceList = this.productsList.map((item) => {
         return Number(item.price);

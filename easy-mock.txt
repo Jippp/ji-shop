@@ -1,0 +1,80 @@
+{
+  "data": [{
+      "price": "500",
+      "imgSrc": "https://img.alicdn.com/imgextra/i3/2208140451147/O1CN015Dcama1KLMtk09aVf_!!0-item_pic.jpg_430x430q90.jpg",
+      "productName": "jeep吉普男鞋",
+      "type": "shoes",
+      "id": "0"
+    },
+    {
+      "price": "450",
+      "imgSrc": "https://gd2.alicdn.com/imgextra/i2/2894320847/O1CN01sdFvi81I7y3YA6s3s_!!2894320847.jpg_400x400.jpg",
+      "productName": "保罗男士短袖T恤",
+      "type": "shirt",
+      "id": "1"
+    },
+    {
+      "price": "400",
+      "imgSrc": "https://img.alicdn.com/imgextra/i3/2456926318/O1CN01a6uU611wXgvvMPzUL_!!2456926318.jpg_430x430q90.jpg",
+      "productName": "COTEDYLAN男五分裤",
+      "type": "shorts",
+      "id": "2"
+    },
+    {
+      "price": "350",
+      "imgSrc": "https://img.alicdn.com/imgextra/i4/1063717696/O1CN01PcEfkj26iogM2jgnP_!!1063717696.jpg_430x430q90.jpg",
+      "productName": "保罗男士夹克",
+      "type": "jacket",
+      "id": "3"
+    },
+    {
+      "price": "300",
+      "imgSrc": "https://img.alicdn.com/bao/uploaded/i4/94399436/O1CN0190d7RD2JZjp18A25Q_!!94399436.jpg_430x430q90.jpg",
+      "productName": "马克华菲羽绒",
+      "type": "jacket",
+      "id": "4"
+    },
+    {
+      "price": "250",
+      "imgSrc": "https://gd2.alicdn.com/imgextra/i2/2207861875793/O1CN01V2cVAW1sfF0Y95PdG_!!2207861875793.jpg_400x400.jpg",
+      "productName": "男士八角帽",
+      "type": "hat",
+      "id": "5"
+    },
+    {
+      "price": "200",
+      "imgSrc": "https://img.alicdn.com/imgextra/i4/3461961510/O1CN01UPsKZK1N1cZvKATdR_!!3461961510.jpg_430x430q90.jpg",
+      "productName": "敦乔男装防晒",
+      "type": "coat",
+      "id": "6"
+    },
+    {
+      "price": "150",
+      "imgSrc": "https://img.alicdn.com/imgextra/i2/1652641922/O1CN01JCoR221Q4Jo0RzSqZ_!!1652641922.jpg_430x430q90.jpg",
+      "productName": "男士毛衣",
+      "type": "sweater",
+      "id": "7"
+    },
+    {
+      "price": "100",
+      "imgSrc": "https://gd1.alicdn.com/imgextra/i1/2199559991/O1CN01Eu9S8Q2Nfvhf9jPpp_!!2199559991.jpg_400x400.jpg",
+      "productName": "男士大衣",
+      "type": "jacket",
+      "id": "8"
+    },
+    {
+      "price": "50",
+      "imgSrc": "https://gd2.alicdn.com/imgextra/i2/684284193/O1CN01uQepRR1gqRJdApvcO_!!684284193-0-lubanu-s.jpg",
+      "productName": "白色短袖T恤",
+      "type": "shirt",
+      "id": "9"
+    },
+    {
+      "price": "10",
+      "imgSrc": "https://img.alicdn.com/imgextra/i1/2200737585110/O1CN01aJCZfD1ncQV6MrA8L_!!0-item_pic.jpg_430x430q90.jpg",
+      "productName": "X-SOCKS运动袜",
+      "type": "sock",
+      "id": "10"
+    }
+  ]
+}
