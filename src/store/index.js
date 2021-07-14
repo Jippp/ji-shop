@@ -23,7 +23,8 @@ let carModule = {
         addList: [],
         addListCount: [],
         paymentActive: false,
-        paymented: false
+        paymented: false,
+        qrCodeUrl: {},
     },
     mutations: {
         getAddList(state, payload) {
@@ -86,12 +87,21 @@ let carModule = {
         clearStep(state) {
             state.paymentActive = false;
             state.paymented = false;
+        },
+        // 获取付款码
+        getPayQrCode(state, payload) {
+            console.log(payload)
+            state.qrCodeUrl = payload.url
         }
     },
     actions: {
         getAddListAction(context, payload) {
             context.commit("getAddList", payload);
             context.commit("getAddListCount");
+        },
+        // 获取付款码
+        getPayQrCodeAction(context, payload) {
+            context.commit('getPayQrCode', payload)
         }
     }
 }
